@@ -1,0 +1,28 @@
+#Mozart
+mplayer -ao oss -cache 256 http://streaming205.radionomy.com:80/Radio-Mozart < /dev/null &
+#Mozart-piano
+mplayer -ao oss -cache 256 http://listen.radionomy.com/abacusfm-mozart-piano < /dev/null &
+#Beethoven
+mplayer -ao oss -cache 256 http://listen.radionomy.com/beethoven-radio  < /dev/null &
+#HITFM
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000035 < /dev/null &
+#台北之音
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000036 < /dev/null &
+#IC 之音
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000037 < /dev/null &
+#飛碟
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000072 < /dev/null &
+#ICRT
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000038 < /dev/null &
+#EXTINF:0,KISS RADIO 網路音樂台
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000042 < /dev/null &
+#EXTINF:0,POP Radio 917台北流行音樂電台
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000080 < /dev/null &
+#EXTINF:0,中廣流行網
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000009 < /dev/null &
+#EXTINF:0,中廣音樂網i radio
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000007 < /dev/null &
+#EXTINF:0,台北愛樂
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000018 < /dev/null &
+#EXTINF:0,奇美古典音樂網
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000014 < /dev/null &
