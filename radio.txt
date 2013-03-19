@@ -26,3 +26,11 @@ mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000007 < /dev/null &
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000018 < /dev/null &
 #EXTINF:0,奇美古典音樂網
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000014 < /dev/null &
+#環宇廣播
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000020 < /dev/null &
+#KISSRadio 網路音樂台
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000042 < /dev/null &
+#NEWS98新聞網
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000073 < /dev/null &
+#中廣新聞網
+mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000008 < /dev/null &
