@@ -2,6 +2,7 @@ import socket
 import re
 import os 
 import subprocess
+from subprocess import Popen, PIPE
 i = 0
 stationlist=[]
 fd = open ("/root/radio.txt","r")
@@ -17,7 +18,7 @@ max_stations = i
 print i
 print stationlist[0]
 current_station = 0
-player = subprocess.Popen(stationlist[current_station].split(" "))
+player = subprocess.Popen(stationlist[current_station].split(" ") , stdin=PIPE)
 sockfile = '/dev/lircd'
 client_socket = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
 client_socket.connect(sockfile);
@@ -46,19 +47,29 @@ def ProcessKey( current_station ):
                 return current_station + 1
             elif ( cmd_list[2] == "chDown" or cmd_list[2] == "chDown_V2"):
                 return current_station -1
+            elif ( cmd_list[2] == "volUp" or cmd_list[2] == "volUp_V2"):
+                return 100
+            elif ( cmd_list[2] == "volDown" or cmd_list[2] == "volDown_V2"):
+                return 200
                 
 
 def PlayRadio( station ):
        os.system("killall " + "mplayer");
        current_station = station
        print current_station
-       player = subprocess.Popen(stationlist[current_station].split(" "))
+       player = subprocess.Popen(stationlist[current_station].split(" "), stdin=PIPE)
 
                 
 
 while 1:
     station = ProcessKey( current_station )
-    if ( station == current_station):
+    if ( station == 100 ):
+       player.stdin.write( '0' )
+       continue
+    elif ( station == 200 ):
+       player.stdin.write( '9' )
+       continue
+    elif ( station == current_station):
        continue
     elif ( station > max_stations +1 ):
        continue
