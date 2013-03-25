@@ -64,10 +64,10 @@ def PlayRadio(station):
 while 1:
     station = ProcessKey(current_station)
     if (station == 100):
-       player.stdin.write('0')
+       #player.stdin.write('0')
        continue
     elif (station == 200):
-       player.stdin.write('9')
+       #player.stdin.write('9')
        continue
     elif (station == current_station):
        continue
