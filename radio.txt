@@ -1,5 +1,5 @@
 #Mozart
-mplayer -ao oss -cache 256 http://streaming205.radionomy.com:80/Radio-Mozart < /dev/null &
+mplayer -ao oss -cache 256 http://listen.radionomy.com/Radio-Mozart < /dev/null &
 #Mozart-piano
 mplayer -ao oss -cache 256 http://listen.radionomy.com/abacusfm-mozart-piano < /dev/null &
 #Beethoven
@@ -32,3 +32,19 @@ mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000020 < /dev/null &
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000073 < /dev/null &
 #中廣新聞網
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000008 < /dev/null &
+#BBC news
+mplayer -ao oss -cache 256 http://stream1.wuftfm.org:8000/wufthd164 < /dev/null	&
+#BBC radio 1
+mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/r1.asx < /dev/null &
+#BBC radio 2
+mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/r2.asx < /dev/null &
+#BBC radio 3
+mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/r3.asx < /dev/null &
+#BBC radio 4
+mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/r4.asx < /dev/null &
+#BBC radio 5
+mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/r5.asx < /dev/null &
+#BBC radio 6
+mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/r6.asx < /dev/null &
+#BBC asian Network
+mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/ran.asx < /dev/null &
