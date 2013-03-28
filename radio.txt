@@ -44,5 +44,5 @@ mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/r4.a
 mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/r5.asx < /dev/null &
 #BBC radio 6
 mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/r6.asx < /dev/null &
-#BBC asian Network
+#BBC Asian Network
 mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/ran.asx < /dev/null &
