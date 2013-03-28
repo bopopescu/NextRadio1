@@ -14,17 +14,17 @@ mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000037 < /dev/null &
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000072 < /dev/null &
 #ICRT
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000038 < /dev/null &
-#EXTINF:0,KISS RADIO 網路音樂台
+#KISS RADIO 網路音樂台
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000042 < /dev/null &
-#EXTINF:0,POP Radio 917台北流行音樂電台
+#POP Radio 917台北流行音樂電台
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000080 < /dev/null &
-#EXTINF:0,中廣流行網
+#中廣流行網
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000009 < /dev/null &
-#EXTINF:0,中廣音樂網i radio
+#中廣音樂網i radio
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000007 < /dev/null &
-#EXTINF:0,台北愛樂
+#台北愛樂
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000018 < /dev/null &
-#EXTINF:0,奇美古典音樂網
+#奇美古典音樂網
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000014 < /dev/null &
 #環宇廣播
 mplayer -ao oss -cache 256 http://bcr.media.hinet.net/RA000020 < /dev/null &
