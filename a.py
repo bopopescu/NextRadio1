@@ -36,17 +36,17 @@ def ProcessKey(current_station):
                funckey = 0
                return station_number
             elif (cmd_list[2][0] == 'R'):
-                funckey = 10
+                funckey = funckey + 10
             elif (cmd_list[2][0] == 'G'):
-                funckey = 20
+                funckey = funckey + 20
             elif (cmd_list[2][0] == 'Y'):
-                funckey = 30
+                funckey = funckey + 30
             elif (cmd_list[2][0] == 'B'):
-                funckey = 40
+                funckey = funckey + 40
             elif (cmd_list[2] == "chUp" or cmd_list[2] == "chUp_V2"):
                 return current_station + 1
             elif (cmd_list[2] == "chDown" or cmd_list[2] == "chDown_V2"):
-                return current_station -1
+                return current_station - 1
             elif (cmd_list[2] == "volUp" or cmd_list[2] == "volUp_V2"):
                 return 100
             elif (cmd_list[2] == "volDown" or cmd_list[2] == "volDown_V2"):
