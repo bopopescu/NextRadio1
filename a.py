@@ -9,13 +9,12 @@ fd = open ("/root/NextRadio/radio.txt","r")
 for line in fd:
     msg = re.search('^#',line)
     if msg:
-       print "...."
+       print "."
     else:
        stationlist.append(line)
        i = i+1
 fd.close()
 max_stations = i
-print i
 print stationlist[0]
 current_station = 0
 player = subprocess.Popen(stationlist[current_station].split(" ") , stdin=PIPE)
@@ -23,6 +22,8 @@ sockfile = '/dev/lircd'
 client_socket = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
 client_socket.connect(sockfile);
 funkey = 0
+power = 1
+
 
 def ProcessKey(current_station):
     station_num = 0
@@ -48,12 +49,16 @@ def ProcessKey(current_station):
             elif (cmd_list[2] == "chDown" or cmd_list[2] == "chDown_V2"):
                 return current_station - 1
             elif (cmd_list[2] == "volUp" or cmd_list[2] == "volUp_V2"):
-                return 100
+                return 1000
             elif (cmd_list[2] == "volDown" or cmd_list[2] == "volDown_V2"):
-                return 200
+                return 1100
+            elif (cmd_list[2] == "power"):
+                funckey = 0
+                return 1200
                 
 
 def PlayRadio(station):
+   if (power == 1):
        os.system("killall " + "mplayer");
        current_station = station
        print current_station
@@ -63,11 +68,19 @@ def PlayRadio(station):
 
 while 1:
     station = ProcessKey(current_station)
-    if (station == 100):
+    if (station == 1000):
        #player.stdin.write('0')
        continue
-    elif (station == 200):
+    elif (station == 1100):
        #player.stdin.write('9')
+       continue
+    elif (station == 1200):
+       if (power == 1):
+          power = 0
+          os.system("killall " + "mplayer");
+       else:
+          power = 1
+          PlayRadio(current_station)
        continue
     elif (station == current_station):
        continue
@@ -77,5 +90,4 @@ while 1:
        station = 0;
     elif (station < 0):
        station = max_stations -1
-    current_station = station
-    PlayRadio (current_station)
+    PlayRadio (station)
