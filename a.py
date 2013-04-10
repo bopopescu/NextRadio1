@@ -90,4 +90,6 @@ while 1:
        station = 0;
     elif (station < 0):
        station = max_stations -1
-    PlayRadio (station)
+    if (power == 1):
+       current_station = station
+       PlayRadio (station)
