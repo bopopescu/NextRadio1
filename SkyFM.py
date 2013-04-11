@@ -23,5 +23,5 @@ for num in range(len(r)):
     if name:
        print '#', name.group(2)
     if url:
-       print url.group(2)
+       print "mplayer -ao oss -cache 256 -playlist ", url.group(2), " < /dev/null &"
 
