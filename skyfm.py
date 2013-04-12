@@ -21,7 +21,7 @@ for num in range(len(r)):
         if '"playlist"' in r[num][index]:
            url = re.search(r'"([\s\S]+)":"([\s\S]+)"', r[num][index])
     if name:
-       print '#', name.group(2)
+       print "#SKY FM:", name.group(2)
     if url:
-       print url.group(2)
+       print "mplayer -ao oss -cache 256 -playlist ", url.group(2), " < /dev/null &"
 
