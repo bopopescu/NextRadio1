@@ -1,0 +1,120 @@
+#SKY FM: Best of the 60s
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/hit60s.pls  < /dev/null &
+#SKY FM: Classic Motown
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/classicmotown.pls  < /dev/null &
+#SKY FM: Russian Pop
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/russianpop.pls  < /dev/null &
+#SKY FM: Russian Dance Hits
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/russiandance.pls  < /dev/null &
+#SKY FM: Israeli Hits
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/israelihits.pls  < /dev/null &
+#SKY FM: Smooth Jazz
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/smoothjazz.pls  < /dev/null &
+#SKY FM: Love Music
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/lovemusic.pls  < /dev/null &
+#SKY FM: Top Hits
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/tophits.pls  < /dev/null &
+#SKY FM: Best of the 80's
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/the80s.pls  < /dev/null &
+#SKY FM: Smooth Lounge
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/smoothlounge.pls  < /dev/null &
+#SKY FM: New Age
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/newage.pls  < /dev/null &
+#SKY FM: Solo Piano
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/solopiano.pls  < /dev/null &
+#SKY FM: Relaxation
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/relaxation.pls  < /dev/null &
+#SKY FM: Mostly Classical
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/classical.pls  < /dev/null &
+#SKY FM: Mellow Jazz
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/mellowjazz.pls  < /dev/null &
+#SKY FM: Caf\u00e9 de Paris
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/cafedeparis.pls  < /dev/null &
+#SKY FM: 90's Hits
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/hit90s.pls  < /dev/null &
+#SKY FM: 80's Rock Hits
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/80srock.pls  < /dev/null &
+#SKY FM: Soft Rock
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/softrock.pls  < /dev/null &
+#SKY FM: Pop Rock
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/poprock.pls  < /dev/null &
+#SKY FM: Modern Rock
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/modernrock.pls  < /dev/null &
+#SKY FM: Hard Rock
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/hardrock.pls  < /dev/null &
+#SKY FM: Metal
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/metal.pls  < /dev/null &
+#SKY FM: Modern Blues
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/modernblues.pls  < /dev/null &
+#SKY FM: Smooth Jazz 24'7
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/smoothjazz247.pls  < /dev/null &
+#SKY FM: Compact Discoveries
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/compactdiscoveries.pls  < /dev/null &
+#SKY FM: Vocal New Age
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/vocalnewage.pls  < /dev/null &
+#SKY FM: Nature
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/nature.pls  < /dev/null &
+#SKY FM: Movie Soundtracks
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/soundtracks.pls  < /dev/null &
+#SKY FM: Relaxing Excursions
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/relaxingexcursions.pls  < /dev/null &
+#SKY FM: Hit 70's
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/hit70s.pls  < /dev/null &
+#SKY FM: Ska
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/ska.pls  < /dev/null &
+#SKY FM: Oldies
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/oldies.pls  < /dev/null &
+#SKY FM: Dreamscapes
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/dreamscapes.pls  < /dev/null &
+#SKY FM: Classical Piano Trios
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/classicalpianotrios.pls  < /dev/null &
+#SKY FM: Classical Guitar
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/guitar.pls  < /dev/null &
+#SKY FM: Country
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/country.pls  < /dev/null &
+#SKY FM: Roots Reggae
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/rootsreggae.pls  < /dev/null &
+#SKY FM: Bossa Nova
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/bossanova.pls  < /dev/null &
+#SKY FM: Vocal Smooth Jazz
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/vocalsmoothjazz.pls  < /dev/null &
+#SKY FM: Uptempo Smooth Jazz
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/uptemposmoothjazz.pls  < /dev/null &
+#SKY FM: DaTempo Lounge
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/datempolounge.pls  < /dev/null &
+#SKY FM: Piano Jazz
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/pianojazz.pls  < /dev/null &
+#SKY FM: Salsa
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/salsa.pls  < /dev/null &
+#SKY FM: World
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/world.pls  < /dev/null &
+#SKY FM: Romantica
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/romantica.pls  < /dev/null &
+#SKY FM: Classic Rock
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/classicrock.pls  < /dev/null &
+#SKY FM: Alternative Rock
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/altrock.pls  < /dev/null &
+#SKY FM: Indie Rock
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/indierock.pls  < /dev/null &
+#SKY FM: Dance Hits
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/dancehits.pls  < /dev/null &
+#SKY FM: Urban Jamz
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/urbanjamz.pls  < /dev/null &
+#SKY FM: Pop Punk
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/poppunk.pls  < /dev/null &
+#SKY FM: Classic Rap
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/classicrap.pls  < /dev/null &
+#SKY FM: Bebop Jazz
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/bebop.pls  < /dev/null &
+#SKY FM: Jazz Classics
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/jazzclassics.pls  < /dev/null &
+#SKY FM: American Songbook
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/americansongbook.pls  < /dev/null &
+#SKY FM: A Beatles Tribute
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/beatles.pls  < /dev/null &
+#SKY FM: Jpop
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/jpop.pls  < /dev/null &
+#SKY FM: Club Bollywood
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/clubbollywood.pls  < /dev/null &
+#SKY FM: Contemporary Christian
+mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/christian.pls  < /dev/null &
