@@ -9,19 +9,12 @@ o = s.split("}")
 r = list()
 
 for index in range(len(o)):
-  obj = re.search(r'{([\s\S]+)', o[index])
-  if obj:
-    s = obj.group(1).split(",")
-    r.append(s)
+    obj = re.search(r'{([\s\S]+)', o[index])
+    if obj:
+        r.append(obj.group(1))
 
 for num in range(len(r)):
-    for index in range(len(r[num])):
-        if '"name"' in r[num][index]:
-           name = re.search(r'"([\s\S"]+)":"([\s\S]+)"', r[num][index])
-        if '"playlist"' in r[num][index]:
-           url = re.search(r'"([\s\S]+)":"([\s\S]+)"', r[num][index])
-    if name:
-       print "#SKY FM:", name.group(2)
-    if url:
-       print "mplayer -ao oss -cache 256 -playlist ", url.group(2), " < /dev/null &"
-
+    obj = re.search(r'"id":([\d]+),"key":"([\s\S]+)","name":"([\s\S]+)","description":"([\s\S]+)","playlist":"([\s\S]+)"', r[num])
+    if obj:
+        print "#SKYFM id:",obj.group(1),",","name:",obj.group(3),",",obj.group(4)
+        print "mplayer -ao oss -cache 256 -playlist ", obj.group(5), " < /dev/null &"

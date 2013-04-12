@@ -1,120 +1,120 @@
-#SKY FM: Best of the 60s
+#SKYFM id: 214 , name: Best of the 60s , Relive the memories of the 60\u2019s greatest hits.
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/hit60s.pls  < /dev/null &
-#SKY FM: Classic Motown
+#SKYFM id: 202 , name: Classic Motown , Relive the hits and discover the early sounds of Motown.
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/classicmotown.pls  < /dev/null &
-#SKY FM: Russian Pop
+#SKYFM id: 205 , name: Russian Pop , Top pop hits direct from Russia.
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/russianpop.pls  < /dev/null &
-#SKY FM: Russian Dance Hits
+#SKYFM id: 204 , name: Russian Dance Hits , Russia's hottest dance tunes.
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/russiandance.pls  < /dev/null &
-#SKY FM: Israeli Hits
+#SKYFM id: 207 , name: Israeli Hits , The best of current and classic Israeli hits.
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/israelihits.pls  < /dev/null &
-#SKY FM: Smooth Jazz
+#SKYFM id: 20 , name: Smooth Jazz , The worlds smoothest jazz 24 hours a day
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/smoothjazz.pls  < /dev/null &
-#SKY FM: Love Music
+#SKYFM id: 61 , name: Love Music , Easy listening and Romantic hits from the heart!!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/lovemusic.pls  < /dev/null &
-#SKY FM: Top Hits
+#SKYFM id: 21 , name: Top Hits , Who cares about the chart order, less rap & more hits!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/tophits.pls  < /dev/null &
-#SKY FM: Best of the 80's
+#SKYFM id: 22 , name: Best of the 80's , Hear your classic favorites right here!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/the80s.pls  < /dev/null &
-#SKY FM: Smooth Lounge
+#SKYFM id: 173 , name: Smooth Lounge , Relax and unwind with the smoothest lounge vibes.
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/smoothlounge.pls  < /dev/null &
-#SKY FM: New Age
+#SKYFM id: 18 , name: New Age , Soothing sounds of new age and world music!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/newage.pls  < /dev/null &
-#SKY FM: Solo Piano
+#SKYFM id: 52 , name: Solo Piano , Musical journeys with piano masters and talented undiscovered pianists
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/solopiano.pls  < /dev/null &
-#SKY FM: Relaxation
+#SKYFM id: 120 , name: Relaxation , relaxing music for the mind and soul
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/relaxation.pls  < /dev/null &
-#SKY FM: Mostly Classical
+#SKYFM id: 17 , name: Mostly Classical , Listen and Relax, it's good for you!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/classical.pls  < /dev/null &
-#SKY FM: Mellow Jazz
+#SKYFM id: 188 , name: Mellow Jazz , Relax and unwind to the Mellow side of Jazz.
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/mellowjazz.pls  < /dev/null &
-#SKY FM: Caf\u00e9 de Paris
+#SKYFM id: 197 , name: Caf\u00e9 de Paris , Watch the world go by on a sunny Paris day.
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/cafedeparis.pls  < /dev/null &
-#SKY FM: 90's Hits
+#SKYFM id: 186 , name: 90's Hits , Reminisce and relive the hits of the 90s!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/hit90s.pls  < /dev/null &
-#SKY FM: 80's Rock Hits
+#SKYFM id: 141 , name: 80's Rock Hits , Your favorite rock hits from the 80's!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/80srock.pls  < /dev/null &
-#SKY FM: Soft Rock
+#SKYFM id: 132 , name: Soft Rock , The best in Soft Rock music!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/softrock.pls  < /dev/null &
-#SKY FM: Pop Rock
+#SKYFM id: 139 , name: Pop Rock , Pop rock hits on SKY.FM!!!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/poprock.pls  < /dev/null &
-#SKY FM: Modern Rock
+#SKYFM id: 131 , name: Modern Rock , Where Modern rock lives on the net.
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/modernrock.pls  < /dev/null &
-#SKY FM: Hard Rock
+#SKYFM id: 130 , name: Hard Rock , Bang along with the best Hard Rock tracks anywhere
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/hardrock.pls  < /dev/null &
-#SKY FM: Metal
+#SKYFM id: 129 , name: Metal , Best Place for your METAL fix on the net
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/metal.pls  < /dev/null &
-#SKY FM: Modern Blues
+#SKYFM id: 128 , name: Modern Blues , Listen to the best in Modern Blues!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/modernblues.pls  < /dev/null &
-#SKY FM: Smooth Jazz 24'7
+#SKYFM id: 118 , name: Smooth Jazz 24'7 , The best of Smooth Jazz 24/7 on SKY.fm
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/smoothjazz247.pls  < /dev/null &
-#SKY FM: Compact Discoveries
+#SKYFM id: 179 , name: Compact Discoveries , Theme-based shows of mostly classical music, jazz, folk, and other popular classics.
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/compactdiscoveries.pls  < /dev/null &
-#SKY FM: Vocal New Age
+#SKYFM id: 121 , name: Vocal New Age , soothing vocal sounds of new age music!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/vocalnewage.pls  < /dev/null &
-#SKY FM: Nature
+#SKYFM id: 119 , name: Nature , soothing sounds of nature music!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/nature.pls  < /dev/null &
-#SKY FM: Movie Soundtracks
+#SKYFM id: 50 , name: Movie Soundtracks , A wide variety of Soundtracks from Movies, show themes, & more!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/soundtracks.pls  < /dev/null &
-#SKY FM: Relaxing Excursions
+#SKYFM id: 138 , name: Relaxing Excursions , Sit back and enjoy the relaxing sounds
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/relaxingexcursions.pls  < /dev/null &
-#SKY FM: Hit 70's
+#SKYFM id: 24 , name: Hit 70's , All Hits, All The Time!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/hit70s.pls  < /dev/null &
-#SKY FM: Ska
+#SKYFM id: 127 , name: Ska , Ska hits from the past to the present!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/ska.pls  < /dev/null &
-#SKY FM: Oldies
+#SKYFM id: 39 , name: Oldies , Three decades of great oldies on www.sky.fm
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/oldies.pls  < /dev/null &
-#SKY FM: Dreamscapes
+#SKYFM id: 109 , name: Dreamscapes , relax to the sounds of dream and ibiza style chillout
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/dreamscapes.pls  < /dev/null &
-#SKY FM: Classical Piano Trios
+#SKYFM id: 94 , name: Classical Piano Trios , Classical Piano Trios hits!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/classicalpianotrios.pls  < /dev/null &
-#SKY FM: Classical Guitar
+#SKYFM id: 19 , name: Classical Guitar , A mix of classical, spanish, and flamenco guitar
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/guitar.pls  < /dev/null &
-#SKY FM: Country
+#SKYFM id: 25 , name: Country , Today's Hit Country with a mix of your favorites
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/country.pls  < /dev/null &
-#SKY FM: Roots Reggae
+#SKYFM id: 23 , name: Roots Reggae , The best of classic and modern Roots Reggae 
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/rootsreggae.pls  < /dev/null &
-#SKY FM: Bossa Nova
+#SKYFM id: 54 , name: Bossa Nova , 100% pure bossa nova channel, enjoy the sweet flavors of Brazil!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/bossanova.pls  < /dev/null &
-#SKY FM: Vocal Smooth Jazz
+#SKYFM id: 111 , name: Vocal Smooth Jazz , The best of vocal smooth jazz!!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/vocalsmoothjazz.pls  < /dev/null &
-#SKY FM: Uptempo Smooth Jazz
+#SKYFM id: 41 , name: Uptempo Smooth Jazz , The world's smoothest jazz, grooving 24 hours a day
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/uptemposmoothjazz.pls  < /dev/null &
-#SKY FM: DaTempo Lounge
+#SKYFM id: 48 , name: DaTempo Lounge , Amazing combination of jazz, lounge, bossa, and much more!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/datempolounge.pls  < /dev/null &
-#SKY FM: Piano Jazz
+#SKYFM id: 55 , name: Piano Jazz , Enjoy the sounds of piano jazz from historic and modern masters.
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/pianojazz.pls  < /dev/null &
-#SKY FM: Salsa
+#SKYFM id: 27 , name: Salsa , Best Salsa Collection now on www.sky.fm
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/salsa.pls  < /dev/null &
-#SKY FM: World
+#SKYFM id: 43 , name: World , New Age influenced world music
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/world.pls  < /dev/null &
-#SKY FM: Romantica
+#SKYFM id: 108 , name: Romantica , Timeless pop classical voices!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/romantica.pls  < /dev/null &
-#SKY FM: Classic Rock
+#SKYFM id: 46 , name: Classic Rock , Relive the classic rock sounds of the 70s and 80s
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/classicrock.pls  < /dev/null &
-#SKY FM: Alternative Rock
+#SKYFM id: 49 , name: Alternative Rock , Alternative rock hits You want to hear!!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/altrock.pls  < /dev/null &
-#SKY FM: Indie Rock
+#SKYFM id: 37 , name: Indie Rock , Indie, Alternative, and Underground Rock!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/indierock.pls  < /dev/null &
-#SKY FM: Dance Hits
+#SKYFM id: 71 , name: Dance Hits , The hottest dance tunes 24/7
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/dancehits.pls  < /dev/null &
-#SKY FM: Urban Jamz
+#SKYFM id: 42 , name: Urban Jamz , Kickin' with the baddest beats on the 'net
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/urbanjamz.pls  < /dev/null &
-#SKY FM: Pop Punk
+#SKYFM id: 107 , name: Pop Punk , A fusion of Punk and Pop!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/poppunk.pls  < /dev/null &
-#SKY FM: Classic Rap
+#SKYFM id: 38 , name: Classic Rap , The best in classic rap and hip hop!!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/classicrap.pls  < /dev/null &
-#SKY FM: Bebop Jazz
+#SKYFM id: 72 , name: Bebop Jazz , Swinging to the sounds of bebop and straight ahead jazz
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/bebop.pls  < /dev/null &
-#SKY FM: Jazz Classics
+#SKYFM id: 26 , name: Jazz Classics , Classic Jazz hits from the golden age
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/jazzclassics.pls  < /dev/null &
-#SKY FM: American Songbook
+#SKYFM id: 93 , name: American Songbook , Classic standard voices from the likes of Mel Torme & Nat King Cole
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/americansongbook.pls  < /dev/null &
-#SKY FM: A Beatles Tribute
+#SKYFM id: 62 , name: A Beatles Tribute , Beatles Hits, Remakes, Tributes!!!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/beatles.pls  < /dev/null &
-#SKY FM: Jpop
+#SKYFM id: 110 , name: Jpop , A fine assortment of fresh Jpop hits!!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/jpop.pls  < /dev/null &
-#SKY FM: Club Bollywood
+#SKYFM id: 140 , name: Club Bollywood , Dance Hits from Bollywood!!
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/clubbollywood.pls  < /dev/null &
-#SKY FM: Contemporary Christian
+#SKYFM id: 51 , name: Contemporary Christian , Today's Christian favorites and undiscovered hits
 mplayer -ao oss -cache 256 -playlist  http://listen.sky.fm/public1/christian.pls  < /dev/null &
