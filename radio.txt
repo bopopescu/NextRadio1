@@ -46,3 +46,9 @@ mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/r5.a
 mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/r6.asx < /dev/null &
 #BBC Asian Network
 mplayer -ao oss -cache 256 -playlist http://www.bbc.co.uk/radio/listen/live/ran.asx < /dev/null &
+#SKY FM Solo Panio
+mplayer -ao oss -cache 256 -playlist http://listen.sky.fm/public1/solopiano.pls < /dev/null &
+#SKY FM Mostly Classical
+mplayer -ao oss -cache 256 -playlist http://listen.sky.fm/public1/classical.pls < /dev/null &
+#SKY FM Classical Guitar
+mplayer -ao oss -cache 256 -playlist http://listen.sky.fm/public1/guitar.pls < /dev/null &
