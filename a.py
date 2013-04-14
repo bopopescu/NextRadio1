@@ -45,9 +45,9 @@ def ProcessKey(current_station):
             elif (cmd_list[2][0] == 'B'):
                 funckey = funckey + 40
             elif (cmd_list[2] == "chUp" or cmd_list[2] == "chUp_V2"):
-                return current_station + 1
-            elif (cmd_list[2] == "chDown" or cmd_list[2] == "chDown_V2"):
                 return current_station - 1
+            elif (cmd_list[2] == "chDown" or cmd_list[2] == "chDown_V2"):
+                return current_station + 1
             elif (cmd_list[2] == "volUp" or cmd_list[2] == "volUp_V2"):
                 return 1000
             elif (cmd_list[2] == "volDown" or cmd_list[2] == "volDown_V2"):
