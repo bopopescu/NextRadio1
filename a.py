@@ -3,8 +3,22 @@ import re
 import os 
 import subprocess
 from subprocess import Popen, PIPE
+
 i = 0
 stationlist=[]
+funkey = 0
+power = 1
+max_stations = 0
+current_station = 0
+sockfile = '/dev/lircd'
+
+def PlayRadio(station):
+   if (power == 1):
+       os.system("killall " + "mplayer");
+       current_station = station
+       print current_station
+       player = subprocess.Popen(stationlist[current_station].split(" "), stdin=PIPE)
+
 fd = open ("/root/NextRadio/radio.txt","r")
 for line in fd:
     msg = re.search('^#',line)
@@ -13,16 +27,14 @@ for line in fd:
     else:
        stationlist.append(line)
        i = i+1
+
 fd.close()
+
 max_stations = i
 print stationlist[0]
-current_station = 0
-player = subprocess.Popen(stationlist[current_station].split(" ") , stdin=PIPE)
-sockfile = '/dev/lircd'
+PlayRadio (current_station)
 client_socket = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
 client_socket.connect(sockfile);
-funkey = 0
-power = 1
 
 
 def ProcessKey(current_station):
@@ -33,9 +45,9 @@ def ProcessKey(current_station):
         cmd_list = data.split( " " )
         if (cmd_list[1] == "00"):
             if (cmd_list[2][0] == 'D'):
-               station_number = funckey + int (cmd_list[2][1])
-               funckey = 0
-               return station_number
+                station_number = funckey + int (cmd_list[2][1])
+                funckey = 0
+                return station_number
             elif (cmd_list[2][0] == 'R'):
                 funckey = funckey + 10
             elif (cmd_list[2][0] == 'G'):
@@ -57,39 +69,30 @@ def ProcessKey(current_station):
                 return 1200
                 
 
-def PlayRadio(station):
-   if (power == 1):
-       os.system("killall " + "mplayer");
-       current_station = station
-       print current_station
-       player = subprocess.Popen(stationlist[current_station].split(" "), stdin=PIPE)
-
-                
-
 while 1:
     station = ProcessKey(current_station)
     if (station == 1000):
-       #player.stdin.write('0')
-       continue
+        continue
     elif (station == 1100):
-       #player.stdin.write('9')
-       continue
+        continue
+    elif (station < -1):
+        continue
     elif (station == 1200):
-       if (power == 1):
-          power = 0
-          os.system("killall " + "mplayer");
-       else:
-          power = 1
-          PlayRadio(current_station)
-       continue
+        if (power == 1):
+            power = 0
+            os.system("killall " + "mplayer");
+        else:
+            power = 1
+            PlayRadio(current_station)
+        continue
     elif (station == current_station):
-       continue
+        continue
     elif (station > max_stations +1):
-       continue
+        continue
     elif (station == max_stations):
-       station = 0;
-    elif (station < 0):
-       station = max_stations -1
+        station = 0;
+    elif (station == -1):
+        station = max_stations -1
     if (power == 1):
-       current_station = station
-       PlayRadio (station)
+        current_station = station
+        PlayRadio (station)
