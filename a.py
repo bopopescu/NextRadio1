@@ -30,8 +30,8 @@ for line in fd:
 
 fd.close()
 
-max_stations = i
-print stationlist[0]
+max_stations = i-1
+print stationlist[max_stations]
 PlayRadio (current_station)
 client_socket = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
 client_socket.connect(sockfile);
@@ -87,12 +87,12 @@ while 1:
         continue
     elif (station == current_station):
         continue
-    elif (station > max_stations +1):
+    elif (station > max_stations + 1):
         continue
-    elif (station == max_stations):
+    elif (station == max_stations + 1):
         station = 0;
     elif (station == -1):
-        station = max_stations -1
-    if (power == 1):
+        station = max_stations
+    if power == 1 and station >= 0 and station <= max_stations :
         current_station = station
         PlayRadio (station)
