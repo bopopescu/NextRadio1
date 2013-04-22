@@ -15,16 +15,18 @@
 # [2013-04-22] By Aladdin
 #              Sky.FM and BBC Radio supported
 #              Reorganized
+#              Enabled IR keys Play,Favor,Home
 
 import socket, re, os, subprocess
 from subprocess import Popen, PIPE
 
 def PlayRadio(station):
-    if 'pls' in stationlist[current_station] or 'asx' in stationlist[current_station]:
-        Play_station = "mplayer -ao oss -slave quiet -cache 256 -playlist " + stationlist[current_station].rstrip("\n") + " < /dev/null &"
+    print stationlist[station]
+    os.system("killall " + "mplayer");
+    if 'pls' in stationlist[station] or 'asx' in stationlist[station]:
+        Play_station = "mplayer -ao oss -slave quiet -cache 256 -playlist " + stationlist[station].rstrip("\n") + " < /dev/null &"
     else:
-        Play_station = "mplayer -ao oss -slave -quiet -cache 256 " + stationlist[current_station].rstrip("\n") + " < /dev/null &"
-    print Play_station
+        Play_station = "mplayer -ao oss -slave -quiet -cache 256 " + stationlist[station].rstrip("\n") + " < /dev/null &"
     player = subprocess.Popen(Play_station.split(" "), stdin=PIPE, stdout=PIPE, stderr=PIPE)
     return player
 
@@ -56,7 +58,12 @@ def ReadKey():
                 return 1003
             elif (cmd_list[2] == "mute"):
                 return 1004
-                
+            elif (cmd_list[2] == "play"):
+                return 1005
+            elif (cmd_list[2] == "favor"): # set favor station
+                return 1006
+            elif (cmd_list[2] == "home"): # play favor station
+                return 1007
 
 i = 0
 stationlist=[]
@@ -78,7 +85,14 @@ for line in fd:
 fd.close()
 
 max_stations = i-1
-print stationlist[max_stations]
+
+if os.path.exists('/root/NextRadio/favor.txt'):
+    fd = open ('/root/NextRadio/favor.txt')
+    favor = int(fd.readline())
+    fd.close()
+else:
+    favor = 0 
+current_station = favor
 player = PlayRadio (current_station)
 client_socket = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
 client_socket.connect(sockfile);
@@ -109,6 +123,17 @@ while 1:
         elif key == 1004: #mute
             player.stdin.write("mute\n");
             continue
+        elif key == 1005: #play/pause
+            player.stdin.write("pause\n");
+            continue
+        elif key == 1006: #set favor
+            fd = open ('/root/NextRadio/favor.txt','w')
+            fd.write(str(current_station))
+            fd.close()
+            favor = current_station
+            continue
+        elif key == 1007: #home, play favor
+	    station = favor
         elif key >= 0 and key <= max_stations:
             station = key
 
