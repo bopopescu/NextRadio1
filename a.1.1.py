@@ -24,7 +24,7 @@ def PlayRadio(station):
     print stationlist[station]
     os.system("killall " + "mplayer");
     if 'pls' in stationlist[station] or 'asx' in stationlist[station]:
-        Play_station = "mplayer -ao oss -slave quiet -cache 256 -playlist " + stationlist[station].rstrip("\n") + " < /dev/null &"
+        Play_station = "mplayer -ao oss -slave -quiet -cache 256 -playlist " + stationlist[station].rstrip("\n") + " < /dev/null &"
     else:
         Play_station = "mplayer -ao oss -slave -quiet -cache 256 " + stationlist[station].rstrip("\n") + " < /dev/null &"
     player = subprocess.Popen(Play_station.split(" "), stdin=PIPE, stdout=PIPE, stderr=PIPE)
