@@ -2,7 +2,7 @@
 #############################################
 #
 # Python script for NextRadio (a.py)
-# Version: 1.0
+# Version: 1.1
 #
 # Created by Aladdin
 #
@@ -13,7 +13,7 @@
 #              Added the Mute,Power keys function
 #
 # [2013-04-22] By Aladdin
-#              Sky.FM supported
+#              Sky.FM and BBC Radio supported
 #              Reorganized
 
 import socket, re, os, subprocess
