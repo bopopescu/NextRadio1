@@ -11,3 +11,9 @@ $WGET $URL
 [ $? = 0 ] && echo "Updating the file a.py Done."
 
 # Adding the updated scripts for NextRadio to the following
+#
+[ -r ./radio.pls ] || {
+   URL='https://github.com/sp0500/NextRadio/raw/master/radio.pls'
+   $WGET $URL
+   [ $? = 0 ] && echo "Updating the file radio.pls Done."
+}
